@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button</title>
+</head>
+<body>
+    
+    <h1>Pesanan</h1>
+    <form action="/order" >
+        <label for="">Komputer</label><br>
+        <div>
+            <input type="radio" name="komputer" id="" value="desktop" checked> <label for=""> Desktop</label><br>
+            <input type="radio" name="komputer" id="" value="minipc"> <label for=""> Mini PC</label><br>
+            <input type="radio" name="komputer" id="" value="laptop"> <label for=""> Laptop</label><br>
+        </div>
+        <div>
+            <label for="ukuran">RAM</label>
+            <select name="ukuran" id="ukuran">
+                <!-- <option>--Pilih RAM--</option> -->
+                <option value="4gb" selected>RAM 4GB</option>
+                <option value="8gb">RAM 8GB</option>
+                <option value="12gb">RAM 12GB</option>
+                <option value="16gb">RAM 16GB</option>
+            </select>
+        </div>
+        <div>
+            <label for="catatan">Catatan</label><br>
+            <textarea name="catatan" id="catatan" cols="20" rows="10"></textarea>
+        </div>
+        <button type="submit">Order</button>
+    </form>
+</body>
+</html>
